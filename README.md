@@ -1,9 +1,12 @@
-# Sanity Clean Content Studio
+# Reproduction of sanity-codegen used with orderable docuement list
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+https://www.sanity.io/plugins/orderable-document-list
+https://www.sanity.io/plugins/sanity-codegen
 
-Now you can do the following things:
+To reproduce:
+```
+npm i
+npx sanity-codegen
+```
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+gives error: Error: Cannot find module 'part:@sanity/base/client'
