@@ -37,19 +37,26 @@ export type {
 };
 
 /**
- * mySchema
+ * schemaWithCustomInputcomponent
  *
  *
  */
-export interface MySchema extends SanityDocument {
-  _type: "mySchema";
+export interface SchemaWithCustomInputcomponent extends SanityDocument {
+  _type: "schemaWithCustomInputcomponent";
 
   /**
-   * field1 — `string`
+   * fieldWithCustomInput — `string`
    *
    *
    */
-  field1?: string;
+  fieldWithCustomInput?: string;
+
+  /**
+   * normalField — `string`
+   *
+   *
+   */
+  normalField?: string;
 }
 
-export type Documents = MySchema;
+export type Documents = SchemaWithCustomInputcomponent;
